@@ -3,5 +3,7 @@ module Main where
 import Hello
 
 main :: IO ()
-main = sayHello
+main = do
+  name <- getLine -- getLine :: IO String
+  sayHello name
 
